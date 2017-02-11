@@ -13,8 +13,8 @@ void valueReferenceExample() {
     reference(&a);
     printf("reference(&a) -> %d\n", a);
 
+    //a = 1000
     int *b = &a;
-    printf("\nvalue(a) -> %d\n", a);
     value(*b);
     printf("value(*b) -> %d\n", *b);
 
@@ -27,6 +27,6 @@ void value(int a) {
     a = a * 100;
 }
 
-void reference(int * a) {
-    *a = *(a) * 100;
+void reference(int* a) {
+    *a = *a * 100;
 }
